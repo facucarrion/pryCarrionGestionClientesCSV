@@ -32,5 +32,26 @@ namespace pryCarrionGestionClientesCSV
             SW.Close();
             SW.Dispose();
         }
+
+        public void Listar(DataGridView dgvListado)
+        {
+            StreamReader SR = new StreamReader(filename);
+            String line;
+            String[] lineArray = new String[4];
+
+            line = SR.ReadLine();
+
+            while (line != null)
+            {
+                lineArray = line.Split(';');
+
+                dgvListado.Rows.Add(lineArray);
+
+                line = SR.ReadLine();
+            }
+
+            SR.Close();
+            SR.Dispose();
+        }
     }
 }

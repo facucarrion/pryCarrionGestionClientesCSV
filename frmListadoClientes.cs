@@ -15,6 +15,10 @@ namespace pryCarrionGestionClientesCSV
         public frmListadoClientes()
         {
             InitializeComponent();
+
+            clsArchivoClientes.Listar(dgvListado);
         }
+
+        clsArchivoClientes clsArchivoClientes = new clsArchivoClientes();
     }
 }

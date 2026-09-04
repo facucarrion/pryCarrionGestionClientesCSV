@@ -32,5 +32,16 @@ namespace pryCarrionGestionClientesCSV
             frmCargarClientes frmCargarClientes = new frmCargarClientes();
             frmCargarClientes.ShowDialog();
         }
+
+        private void listadoDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListadoClientes frmListadoClientes = new frmListadoClientes();
+            frmListadoClientes.ShowDialog();
+        }
+
+        private void cerrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
