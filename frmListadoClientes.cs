@@ -17,6 +17,9 @@ namespace pryCarrionGestionClientesCSV
             InitializeComponent();
 
             clsArchivoClientes.Listar(dgvListado);
+            clsArchivoClientes.ObtenerTotalDeuda(lblTotalDeuda);
+            clsArchivoClientes.ObtenerCantidadClientes(lblCantidadClientes);
+            clsArchivoClientes.ObtenerPromedioDeuda(lblPromedioDeuda);
         }
 
         clsArchivoClientes clsArchivoClientes = new clsArchivoClientes();
