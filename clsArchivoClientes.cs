@@ -39,6 +39,8 @@ namespace pryCarrionGestionClientesCSV
             String line;
             String[] lineArray = new String[4];
 
+            dgvListado.Rows.Clear();
+
             line = SR.ReadLine();
 
             while (line != null)
